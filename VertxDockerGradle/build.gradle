@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+mainClassName = 'me.soshin.Application'
+
+def vertxVersion = '3.4.2'
+
+dependencies {
+    compile "io.vertx:vertx-core:$vertxVersion"
+    compile "io.vertx:vertx-web:$vertxVersion"
+}
